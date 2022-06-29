@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart-Disease-Prediction</title>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+<h2>Heart Disease Predictive analysis</h2>
+        <form action="{{ url_for('predict')}}" method="post">
+            <div class="body_form">
+                <div class="left_side">
+
+                    <h3>Slope of peak Exercise St Segment</h3>
+                    <input id="first" name="sop" type="number ">
+                    <br><br>
+                    <h3>What is Resting Blood Pressure?</h3><input id="second" name="resting_bp" required="required">
+                    <br><br>
+                    <h3>Type of chest pain?(1 or 2 or 3 or 4)</h3><input id="third" name="cpt" required="required" >
+                    <br><br>
+                    <h3>Major Blood vessels of The Heart(0 or 1 or 2 or3) ?</h3><input id="fourth" name="major_vessels" required="required">
+                    <br><br>
+                    <h3>Serum Cholesterol</h3><input id="fifth" name="serum_cholesterol" required="required">
+                    <br><br>
+                    <h3>Old Peak ST Depression?</h3><input id="sixth" name="oldpeak_st_depression" required="required">
+                    <br><br>
+                    <h3>Age</h3><input id="seventh" name="age" required="required">
+                    <br><br>
+                    <h3>Max Heart Rate</h3><input id="eighth" name="max_heart_rate" required="required">
+
+
+
+                </div>
+                <div class="right_side">
+
+
+                    <h3>What Is the Thal(Blood Disorder)?</h3><select name="thal_normal" id="dropdown" required="required">
+                        <option value="normal">Normal</option>
+                        <option value="reversible_defect">Reversible Defect</option>
+                        <option value="fixed_defect">Fixed Defect </option>
+                    </select>
+                    <p/>
+                    <h3>Fasting Blood Sugar (0=False or 1=True)</h3><select name="fasting_blood_sugar" id="dropdown" required="required">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                    <p/>
+                    <h3>Sex (0=Female or 1=Male)</h3><select name="sex" id="dropdown" required="required">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                    <p/>
+                    <h3>Exercise Induced Angina (0=No or 1=Yes)</h3><select name="exercise_induced_angina" id="dropdown" required="required">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                    <p/>
+                    <h3>Resting EKG Result </h3><select name="ekg_result" id="dropdown" required="required">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <p></p><button id="sub" type="submit ">Predict The Patient</button>
+                    <br>
+                </div>
+
+
+
+
+
+            </div>
+
+        </form>
+
+
+
+        <br><br><h3>{{pred}}<h3>
+
+
+
+
+    <style>
+        body {
+            text-align: left;
+            padding: 16px 32px;
+            background-color: #ffffff
+        }
+
+        .body_form {
+            display: flex;
+        }
+
+        .left_side {
+            color: black;
+            width: 50%;
+        }
+
+        .right_side {
+            color: black;
+            width: 50%;
+        }
+
+        h3 {
+            font-weight: normal;
+
+        }
+
+
+
+        #research {
+            font-size: 18px;
+            width: 100px;
+            height: 23px;
+            top: 23px;
+        }
+
+        #box {
+            border-radius: 12px;
+            border-color: 45px;
+            border-style: solid;
+            font-family: cursive;
+            text-align: center;
+            background-color: rgb(168, 131, 61);
+            font-size: medium;
+            position: absolute;
+            width: 700px;
+            bottom: 9%;
+            height: 850px;
+            right: 30%;
+            padding: 0px;
+            margin: 0px;
+            font-size: 14px;
+        }
+
+        #fuel {
+            width: 240px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 20px;
+        }
+
+        #fuel:hover {
+            background-color: corel;
+        }
+
+        #research {
+            width: 99px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+
+        #research:hover {
+            background-color: coral;
+        }
+
+        #dropdown {
+            width: 240px;
+            height: 43px;
+            text-align: center;
+            border-radius: 12px;
+            font-size: 18px;
+        }
+
+        #resea:hover {
+            background-color: coral;
+        }
+
+        #sub {
+            height: 60px;
+            width: 240px;
+            margin: 64px 0px;
+            padding: 10px 16px;
+            text-align: center;
+            border-radius: 10px;
+            background-color: royalblue;
+            color: white;
+            font-size: 18px;
+        }
+
+        #sub:hover {
+            background-color: SlateBlue;
+            cursor:pointer;
+
+        }
+
+        #first {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #second {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #third {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        #fourth {
+            border-radius: 4px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</body>
+
+</html>
