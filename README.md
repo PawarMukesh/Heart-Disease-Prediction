@@ -1,4 +1,4 @@
-# Heart-Disease
+# Heart-Disease Prediction
 
 
 BUISENESS CASE :
