@@ -1,6 +1,10 @@
 # Heart-Disease Prediction
 
 
+![image](https://user-images.githubusercontent.com/101791322/180658098-e164df2e-025c-43c3-a4d8-decb2fdd4251.png)
+
+
+
 ## BUISENESS CASE :
 BASE ON GIVEN FEATURE AND MESUREMENT PREDICT WHETHER PATIENT WILL HAVE HEART DISEASE OR NOT.
 
