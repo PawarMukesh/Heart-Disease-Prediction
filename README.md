@@ -69,13 +69,78 @@ Angina is chest pain or discomfort caused when your heart muscle doesn't get eno
 [0: no heart disease present, 1: heart disease present]
 
 
+# EXPLOTARY DATA ANALYSIS
+## ANALYSIS ON CATEGORICAL VERIABLE WITH RESPECT TO TARGET VERIABLE(HEART DISEASE)
+
+![image](https://user-images.githubusercontent.com/101791322/180658181-3b9d8548-20ed-4262-bc01-d6ff34327955.png)
+
+### OBSERVATION:
+
+#### 1.IMPACT OF SOP TO HEART DISEASE:
+* In this table clearly seen the slope of peak st segment is upsloping the chance of heart disease is less than other.
+* If slop pf peak is flat the chance of heart disease in more than upsloping
+* downslope st segment patient is also chance to get heart diseaase
+* with the follwing observation we can say that slope of peak st segment is fullt impact to heart disease
+
+#### 2.IMPACT OF THAL TO HEART DISEASE:
+* Normal blood disorder patient has less chance of heart disease than other thal
+* reversible defect blood disorder has more chance of heart disease and fixed defect blood disorder has 50-50 chance of heart disease
+
+#### 3.IMPACT OF CPT TO HEART DISEASE:
+* if the patient have asymtomatic(4) chest paint the chance of heart disease is more high
+* non-anginal pain(3),typical angina(1), Atypical angina(2) chest pain has less chances of heart disease.
+* but all chest pain types are impacted to heart disease.
+
+#### 4.IMPACT OF FASTING BLOOD SUGAR TO HEART DISEASE:
+* If fasting blood suagar is less than 120mg/dl the chance of heart disease is high.
+* fasting blood sugar is greter than 120mg/dl the chace of heart disease is slightly less.
 
 
 
 
+#### 5.IMPACT OF SEX TO HEART DISEASE:
+* Male patient has more chance of heart disease than female
 
 
+#### 6.IMPACT OF MAJOR VESSELS TO HEART DISEASE:
+* If the major vessels is zero the chance of heart disease is less but zero major vessels are also chance of heart disease
+* 1,2, and 3 major vessels are more(high) chance of heart disease
 
+#### 7.IMPACT OF EKG RESULT TO HEART DISEASE:
+* If the ekg/ecg result is normal(0) the chance of heart disease is less.
+* If ekg/ecg result is 1 the 100% patient has heart disease
+* 2 ekg/ecg result is 50-50% chance of heart disease
+
+#### 8.IMPACT OF EXERCISE INDUCED ANGINA:
+* If the patient has no chest pain the chance of heart disease is less 
+* If patient has chest pain the chance of heart disease is more
+
+
+## ANALYSIS ON NUMERICAL VERIABLE WITH RESPECT TO TARGET VERIBLE (HEART DISEASE)
+
+![image](https://user-images.githubusercontent.com/101791322/180658294-6a2e0284-c222-4a77-a628-4649e93a6073.png)
+
+### OBSERVATION:
+#### 1.IMPACT OF RESTING BP TO HEART DISEASE:
+* If the blood pressure range between 110 to 150 the chance of heart disease is more 
+* If resting blood pressure is low the chance of heart disease is slightly less
+
+#### 2.IMPACT OF SERUM CHOLESTREOL TO HEART DISEASE:
+* If serum cholestreol is less than 350 the heart disease chance is 50-50 percent.
+* serum cholestreol is more than 350 thier is no chance of heart disease
+
+#### 3.IMPACT OF OLD PEAK DEPRESSION TO HEART DISEASE:
+* If old peak depression is less the chance of heart disease is less 
+* old peak depression is more than 1 the chance of heart disease is more
+
+#### 4.IMAPCT OF AGE TO HEART DISEASE:
+* At the age of 60 the more chance of heart disease and age range between 40 to 70 heart disease chance is 50-50 percent
+* If age is less than 30 their is no chance of heart disease
+
+#### 5.IMAPCT OF MAX HEART RATE TO HEART DISEASE:
+* If the heart rate is less than 140 the chance of heart disease is more
+* Above 140 heart rate chance of heart disease is 50-50 percent.
+* If the heart rate is more than 180 their is no chance of heart disease
 
 
 
