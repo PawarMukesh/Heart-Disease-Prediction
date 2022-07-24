@@ -1,10 +1,10 @@
 # Heart-Disease Prediction
 
 
-BUISENESS CASE :
+## BUISENESS CASE :
 BASE ON GIVEN FEATURE AND MESUREMENT PREDICT WHETHER PATIENT WILL HAVE HEART DISEASE OR NOT.
 
-### Task:
+## Task:
 BINARY CLASSIFICATION TASK
 
 
@@ -13,7 +13,7 @@ Cardiovascular disease or heart disease is the leading cause of death amongst wo
 
 The term heart disease is often used interchangeably with the term cardiovascular disease. Cardiovascular disease generally refers to conditions that involve narrowed or blocked blood vessels that can lead to a heart attack, chest pain (angina) or stroke.
 
-### DOMAIN ANALYSIS
+## DOMAIN ANALYSIS
 TARGET COLUMN == HEART DISEASE PRESENT
 In this project we are going to analyze that how other feature of dataset affecting heart disease
 
@@ -53,8 +53,6 @@ sex (1 = male; 0 = female)
 
 #### 12.AGE: 
 age in years
-
-
 
 
 #### 13.MAX HEART RATE: 
